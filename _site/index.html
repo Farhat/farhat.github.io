@@ -7,37 +7,47 @@
     <link rel="stylesheet" href="/assets/css/main.css">
     <script src="/assets/js/main.js" defer></script>
     <style>
-        /* Add simple futuristic styling */
+        /* Retro-futuristic styling */
         body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #0a0f24;
-            color: #e0e4f1;
+            background-color: #0d0f1b; /* Dark base color */
+            color: #c0caf5; /* Cool neon text color */
+            font-family: 'Courier New', Courier, monospace; /* Retro-looking font */
             margin: 0;
             padding: 0;
         }
-        .glow {
-            text-shadow: 0 0 10px #03e9f4, 0 0 20px #03e9f4, 0 0 30px #03e9f4, 0 0 40px #03e9f4;
-        }
-        .header-container {
+        .neon-header {
             text-align: center;
-            padding: 100px 20px;
-            animation: fadeIn 3s ease-in-out;
+            padding: 80px 20px;
+            font-size: 3em;
+            color: #8af4ff;
+            text-shadow: 0 0 5px #8af4ff, 0 0 10px #8af4ff, 0 0 20px #8af4ff;
+            animation: flicker 3s infinite alternate;
         }
-        @keyframes fadeIn {
-            0% { opacity: 0; transform: translateY(20px); }
-            100% { opacity: 1; transform: translateY(0); }
+        .retro-box {
+            border: 1px solid #4c4f5a;
+            padding: 20px;
+            background-color: #151728;
+            border-radius: 8px;
+            margin: 20px auto;
+            max-width: 800px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+        @keyframes flicker {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.8; }
         }
     </style>
 </head>
 <body>
-    <div class="header-container">
-        <h1 class="glow">Welcome to the Future of AI</h1>
-        <p>Explore cutting-edge AI developments, futuristic trends, and immersive tech content.</p>
-        <button id="animate-btn">Discover More</button>
+    <div class="neon-header">The Future, As Seen From the Past</div>
+    <div class="retro-box">
+        <h2>Welcome to Our Retro-Futuristic AI Platform</h2>
+        <p>Step into a world where the visions of tomorrow meet the technology of today. Explore, innovate, and marvel at the future imagined from a retro perspective.</p>
+        <button id="animate-btn" class="neon-button">Explore Now</button>
     </div>
-    <div id="animated-section" class="hidden">
-        <h2>What is AI?</h2>
-        <p>Artificial Intelligence (AI) is transforming the world as we know it. From self-driving cars to advanced language models, AI is at the forefront of technological evolution.</p>
+    <div id="animated-section" class="hidden retro-box">
+        <h3>AI Through the Decades</h3>
+        <p>From the mechanical wonders of the 1950s to the cutting-edge neural networks of the 21st century, witness how artificial intelligence has evolved over the years.</p>
     </div>
 </body>
 </html>

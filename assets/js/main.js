@@ -7,19 +7,18 @@ document.addEventListener('DOMContentLoaded', function () {
         section.style.animation = 'slideIn 1s forwards';
     });
 
+    // Add custom CSS for the section animations
     const css = `
         .hidden {
             display: none;
         }
         #animated-section {
-            margin: 20px;
+            margin-top: 20px;
             padding: 20px;
-            background-color: #1b1f3b;
-            border-radius: 8px;
-            color: #03e9f4;
+            color: #8af4ff;
         }
         @keyframes slideIn {
-            from { opacity: 0; transform: translateY(50px); }
+            from { opacity: 0; transform: translateY(30px); }
             to { opacity: 1; transform: translateY(0); }
         }
     `;

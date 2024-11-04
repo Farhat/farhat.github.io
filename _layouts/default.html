@@ -3,51 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title | default: "Retro-Futuristic AI Hub" }}</title>
+    <title>Farhat Habib | Professional Page</title>
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
-    <script src="{{ '/assets/js/main.js' | relative_url }}" defer></script>
-    <style>
-        /* Retro-futuristic styling */
-        body {
-            background-color: #0d0f1b; /* Dark base color */
-            color: #c0caf5; /* Cool neon text color */
-            font-family: 'Courier New', Courier, monospace; /* Retro-looking font */
-            margin: 0;
-            padding: 0;
-        }
-        .neon-header {
-            text-align: center;
-            padding: 80px 20px;
-            font-size: 3em;
-            color: #8af4ff;
-            text-shadow: 0 0 5px #8af4ff, 0 0 10px #8af4ff, 0 0 20px #8af4ff;
-            animation: flicker 3s infinite alternate;
-        }
-        .retro-box {
-            border: 1px solid #4c4f5a;
-            padding: 20px;
-            background-color: #151728;
-            border-radius: 8px;
-            margin: 20px auto;
-            max-width: 800px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-        }
-        @keyframes flicker {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.8; }
-        }
-    </style>
 </head>
 <body>
-    <div class="neon-header">The Future, As Seen From the Past</div>
-    <div class="retro-box">
-        <h2>Welcome to Our Retro-Futuristic AI Platform</h2>
-        <p>Step into a world where the visions of tomorrow meet the technology of today. Explore, innovate, and marvel at the future imagined from a retro perspective.</p>
-        <button id="animate-btn" class="neon-button">Explore Now</button>
-    </div>
-    <div id="animated-section" class="hidden retro-box">
-        <h3>AI Through the Decades</h3>
-        <p>From the mechanical wonders of the 1950s to the cutting-edge neural networks of the 21st century, witness how artificial intelligence has evolved over the years.</p>
+    <div class="container">
+        <header class="neon-header">Farhat Habib</header>
+        <nav>
+            <ul class="links-list">
+                <li><a href="{{ '/publications.html' | relative_url }}">Publications</a></li>
+                <li><a href="{{ '/experiments.html' | relative_url }}">Experiments</a></li>
+                <li><a href="{{ '/media-mentions.html' | relative_url }}">Media Mentions</a></li>
+            </ul>
+        </nav>
+        <section class="bio">
+            <h2>Brief Bio</h2>
+            <p>
+            </p>
+            <p>
+            </p>
+        </section>
     </div>
 </body>
 </html>
